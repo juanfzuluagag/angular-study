@@ -1,0 +1,15 @@
+<h1>Buscador de heroes: <small>{{textFound}}</small></h1>
+<hr>
+
+<div class="row animated fadeIn fast" *ngIf="heroesFound.length == 0">
+    <div class="col-md-12">
+        <div class="alert alert-info" role="alert">
+            No existen resultados con el término: {{ textFound }}
+        </div>
+    </div>
+</div>
+
+
+<div class="card-columns">
+    <app-heroe-card [heroe]="heroe" [index]="heroe.idx" *ngFor="let heroe of heroesFound; let i = index"></app-heroe-card>
+</div>

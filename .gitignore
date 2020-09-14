@@ -1,0 +1,75 @@
+### Angular ###
+## Angular ##
+# compiled output
+dist/
+tmp/
+app/**/*.js
+app/**/*.js.map
+
+# dependencies
+node_modules/
+bower_components/
+
+# IDEs and editors
+.idea/
+
+# misc
+.sass-cache/
+connect.lock/
+coverage/
+libpeerconnection.log/
+npm-debug.log
+testem.log
+typings/
+
+# e2e
+e2e/*.js
+e2e/*.map
+
+# System Files
+.DS_Store/
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+
+#02-webpackStarter
+02-webpackStarter
+
+#03-hello-world
+projects/03-hello-world/e2e/
+projects/03-hello-world/node_modules/
+projects/03-hello-world/.browserslistrc
+projects/03-hello-world/.editorconfig
+projects/03-hello-world/.gitignore
+projects/03-hello-world/debug.log
+
+#04-spa
+projects/04-spa/e2e/
+projects/04-spa/node_modules/
+projects/04-spa/.browserslistrc
+projects/04-spa/.editorconfig
+projects/04-spa/.gitignore
+projects/04-spa/debug.log
+projects/04-spa/README.md
+
+#05-pipes
+projects/05-pipes/e2e/
+projects/05-pipes/node_modules/
+projects/05-pipes/.browserslistrc
+projects/05-pipes/.editorconfig
+projects/05-pipes/.gitignore
+projects/05-pipes/debug.log
+projects/05-pipes/README.md
+
+
+
+
