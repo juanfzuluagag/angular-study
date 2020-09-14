@@ -42,8 +42,7 @@ e2e/*.map
 .history
 
 #02-webpackStarter
-02-webpackStarter/node_modules
-02-webpackStarter/README.md
+02-webpackStarter
 
 #03-hello-world
 projects/03-hello-world/e2e/
@@ -70,6 +69,15 @@ projects/05-pipes/.editorconfig
 projects/05-pipes/.gitignore
 projects/05-pipes/debug.log
 projects/05-pipes/README.md
+
+#06-spotiapp
+projects/06-spotiapp/e2e/
+projects/06-spotiapp/node_modules/
+projects/06-spotiapp/.browserslistrc
+projects/06-spotiapp/.editorconfig
+projects/06-spotiapp/.gitignore
+projects/06-spotiapp/debug.log
+projects/06-spotiapp/README.md
 
 
 
