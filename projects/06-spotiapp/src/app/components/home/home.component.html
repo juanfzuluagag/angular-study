@@ -1,2 +1,6 @@
-<app-loading *ngIf="newReleases == undefined"></app-loading>
+<app-loading *ngIf="newReleases == undefined && errorMsg === ''"></app-loading>
+<div *ngIf="errorMsg !== ''" class="alert alert-danger animated fadeIn">
+    <h3>Error</h3>
+    <p>{{ errorMsg }}</p>
+</div>
 <app-cards [items]="newReleases"></app-cards>

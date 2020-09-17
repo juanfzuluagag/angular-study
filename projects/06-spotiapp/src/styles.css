@@ -6,7 +6,11 @@ body {
 }
 
 hr {
-    border-color: white;
+    color: white;
+}
+
+table {
+    color: aliceblue !important;
 }
 
 .puntero {
