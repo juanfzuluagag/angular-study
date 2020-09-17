@@ -1,15 +1,2 @@
-<!--
-exercise with https://restcountries.eu/rest/v2/lang/es
-<ul>
-    <li *ngFor="let country of countries; let i=index">{{country.name}} - {{country.population | number}}</li>
-</ul>
--->
-<div class="card-columns">
-    <div *ngFor="let release of newReleases; let i=index" class="card">
-        <img [src]="release.images[0].url" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">{{ release.name }}</h5>
-            <span *ngFor="let artist of release.artists;" class="badge badge-pill badge-primary">{{ artist.name }}</span>
-        </div>
-    </div>
-</div>
+<app-loading *ngIf="newReleases == undefined"></app-loading>
+<app-cards [items]="newReleases"></app-cards>

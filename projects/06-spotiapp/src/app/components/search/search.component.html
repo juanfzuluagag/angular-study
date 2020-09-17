@@ -6,12 +6,19 @@
 
 <hr>
 
-<div *ngIf="artists != null" class="card-columns m-5">
-    <div *ngFor="let artist of artists; let i=index" class="card">
-        <img *ngIf="artist.images[0] != undefined" [src]="artist.images[0].url" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">{{ artist.name }}</h5>
-            <span *ngFor="let gender of artist.genres;" class="badge badge-pill badge-primary">{{ gender }}</span>
+<app-loading *ngIf="artists == undefined && searchTerm.value" class="m-5 "></app-loading>
+
+
+<app-cards *ngIf="artists != undefined" [items]="artists "></app-cards>
+<!--
+<div *ngIf="artists !=n ull " class="card-columns m-5 ">
+    <div *ngFor="let artist of artists; let i=index " class="card ">
+        <img [src]=" artist.images | noimage " class="card-img-top " alt="... ">
+        <div class="card-body ">
+            <h5 class="card-title ">{{ artist.name }}</h5>
+            <span *ngFor="let gender of artist.genres; " class="badge badge-pill badge-primary ">{{ gender }}</span>
         </div>
     </div>
 </div>
+
+-->
