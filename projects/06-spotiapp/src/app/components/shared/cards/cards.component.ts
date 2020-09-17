@@ -10,7 +10,8 @@ export class CardsComponent implements OnInit {
   
   @Input() items : any[] = [];
   
-  constructor(private router : Router) { }
+  constructor(
+    private router : Router) { }
 
   ngOnInit(): void {
   }
@@ -23,7 +24,7 @@ export class CardsComponent implements OnInit {
     }else{
       artistId = item.artists[0].id;
     }
-    this.router.navigate(['/artist', artistId]);
+    this.router.navigate(['/artists', artistId]);
   }
 
 }

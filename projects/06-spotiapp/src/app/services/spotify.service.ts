@@ -34,4 +34,14 @@ export class SpotifyService {
     return this.getQuery(`search?q=${ searchTerm }&type=artist`)
               .pipe( map( (dataResponse : any) => dataResponse['artists'].items));
   }
+
+  getArtistById(artist : string){
+    
+    return this.getQuery(`artists/${ artist }`); 
+  }
+
+  getTopTracksByArtistId( artist : string ){
+    return this.getQuery(`artists/${ artist }/top-tracks?country=us`)
+      .pipe( map( (dataResponse : any) => dataResponse.tracks) ); 
+  }
 }
