@@ -11,15 +11,16 @@ import { SpotifyService } from "../../services/spotify.service";
 export class HomeComponent implements OnInit {
 
   newReleases : any[];
-
+  errorMsg : string;
   constructor(private spotify : SpotifyService){
   }
 
   ngOnInit(): void {
     this.spotify.getNewReleases()
       .subscribe(( responseData : any ) => {
-        console.log(responseData);
         this.newReleases = responseData;
+     }, (responseError : any) =>{
+       this.errorMsg = responseError.error.error.message;
      });
   }
 
