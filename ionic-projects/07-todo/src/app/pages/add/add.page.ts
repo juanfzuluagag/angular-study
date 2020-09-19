@@ -50,4 +50,9 @@ export class AddPage implements OnInit {
     }
     this._todoService.saveStorage();
   }
+
+  deleteItem( index : number){
+    this.todoList.items.splice(index, 1);
+    this._todoService.saveStorage();
+  }
 }
