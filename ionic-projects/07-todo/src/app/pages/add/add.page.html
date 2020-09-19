@@ -1,0 +1,30 @@
+<ion-header no-border>
+    <ion-toolbar color="dark">
+        <ion-title>{{ todoList.title }}</ion-title>
+        <ion-buttons>
+            <ion-back-button defaultHref="/" color="tertiary" slot="start"></ion-back-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+    <ion-list>
+        <ion-item color="dark">
+            <ion-label position="floating">New task</ion-label>
+            <ion-input type="text" [(ngModel)]="itemName" (keyup.enter)="addNewItem()"></ion-input>
+        </ion-item>
+    </ion-list>
+
+    <ion-list>
+        <ion-list-header color="dark">
+            <ion-label>Tasks To Do</ion-label>
+        </ion-list-header>
+
+        <ion-item color="dark" *ngFor="let todoItem of todoList.items" class="animated fadeInDown">
+
+            <ion-checkbox slot="start" color="tertiary" [(ngModel)]="todoItem.complete" (ionChange)="changeCheck(todoItem)"></ion-checkbox>
+            <ion-label>{{todoItem.description}}</ion-label>
+
+        </ion-item>
+    </ion-list>
+</ion-content>
