@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { AlertController } from "@ionic/angular";
-import { TodoList } from 'src/app/models/todo-list.model';
 import { TodoService } from 'src/app/services/todo.service';
 
 @Component({
@@ -33,7 +32,7 @@ export class Tab1Page {
         text: 'Cancel',
         role: 'cancel',
         handler : () => {
-          console.log('Cancelando...');
+          return;
         }
       },
       {
