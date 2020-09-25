@@ -89,5 +89,14 @@ projects/08-misc/.gitignore
 projects/08-misc/debug.log
 projects/08-misc/README.md
 
+#09-auth0-app
+projects/09-auth-app/e2e/
+projects/09-auth-app/node_modules/
+projects/09-auth-app/.browserslistrc
+projects/09-auth-app/.editorconfig
+projects/09-auth-app/.gitignore
+projects/09-auth-app/debug.log
+projects/09-auth-app/README.md
+
 
 
