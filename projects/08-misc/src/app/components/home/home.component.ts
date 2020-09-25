@@ -1,0 +1,63 @@
+import { Component, OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy } from '@angular/core';
+
+@Component({
+  selector: 'app-home',
+  template: `
+    <app-ng-style></app-ng-style>
+    <app-css></app-css>
+    <p>Hola mundo desde app.component</p>
+
+    <app-classes></app-classes>
+
+    <hr>
+
+    <p [appResaltado]="'orange'">
+        Hola mundo!!!--->
+    </p>
+
+    <hr>
+    
+    <app-ng-switch></app-ng-switch>
+  `,
+  styles: [
+  ]
+})
+export class HomeComponent implements OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy {
+
+  constructor() { 
+    console.log("Contructor...")
+  }
+
+  ngOnInit(): void {
+    console.log("ngOnInit");
+  }
+
+  ngOnChanges(): void{
+    console.log("ngOnChanges");
+
+  } 
+  ngDoCheck(): void{
+    console.log("ngDoCheck");
+
+  } 
+  ngAfterContentInit(): void{
+    console.log("ngAfterContentInit");
+
+  } 
+  ngAfterContentChecked(): void{
+    console.log("ngAfterContentChecked");
+
+  } 
+  ngAfterViewInit(): void{
+    console.log("ngAfterViewInit");
+
+  }
+  ngAfterViewChecked(): void{
+    console.log("ngAfterViewChecked");
+
+  } 
+  ngOnDestroy(): void{
+    console.log("ngOnDestroy");
+
+  }
+}

@@ -80,5 +80,23 @@ projects/06-spotiapp/debug.log
 projects/06-spotiapp/README.md
 
 
+#08-misc-with-angular
+projects/08-misc/e2e/
+projects/08-misc/node_modules/
+projects/08-misc/.browserslistrc
+projects/08-misc/.editorconfig
+projects/08-misc/.gitignore
+projects/08-misc/debug.log
+projects/08-misc/README.md
+
+#09-auth0-app
+projects/09-auth-app/e2e/
+projects/09-auth-app/node_modules/
+projects/09-auth-app/.browserslistrc
+projects/09-auth-app/.editorconfig
+projects/09-auth-app/.gitignore
+projects/09-auth-app/debug.log
+projects/09-auth-app/README.md
+
 
 
