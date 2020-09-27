@@ -1,5 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+
+import { AuthGuard } from './services/auth.guard';
+
+import { CallbackComponent } from './components/callback/callback.component';
 import { HomeComponent } from './components/home/home.component';
 import { PriceComponent } from './components/price/price.component';
 import { ProtectedComponent } from './components/protected/protected.component';
@@ -7,7 +11,8 @@ import { ProtectedComponent } from './components/protected/protected.component';
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'prices', component: PriceComponent },
-  { path: 'protected', component: ProtectedComponent },
+  { path: 'protected', component: ProtectedComponent, canActivate: [ AuthGuard ] },
+  { path: 'callback', component: CallbackComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 
