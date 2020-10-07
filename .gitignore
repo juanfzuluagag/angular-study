@@ -99,4 +99,14 @@ projects/09-auth-app/debug.log
 projects/09-auth-app/README.md
 
 
+#10-loginWithFireBase
+projects/10-loginApp/e2e/
+projects/10-loginApp/node_modules/
+projects/10-loginApp/.browserslistrc
+projects/10-loginApp/.editorconfig
+projects/10-loginApp/.gitignore
+projects/10-loginApp/debug.log
+projects/10-loginApp/README.md
+
+
 
